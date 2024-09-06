@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML Series</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script>
+        MathJax.Hub.Config({
+            extensions: ["tex2jax.js"],
+            jax: ["input/TeX", "output/HTML-CSS"],
+            tex2jax: {
+                inlineMath: [['\\(', '\\)']],
+                displayMath: [['\\[', '\\]']],
+                processEscapes: true
+            },
+            "HTML-CSS": { scale: 90 },
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js" integrity="sha512-AMl4wfwAmDM1lsQvVBBRHYENn1FR8cfOTpt8QVbb/P55mYOdahHD4LmHM1W55pNe3j/3od8ELzPf/8eNkkjISQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Observer.min.js" integrity="sha512-7xTD1meeGGoAzwZKA0Z8YelV3qAvRltuwACWXpnxtneF7VAMztOTAi3t4laVSaE4Znq4LMPeGUIYWEvKEk5r3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Draggable.min.js" integrity="sha512-S6SXKUZ11xkCoD/UuhdXG4B4iiCXng+xW2KCx0lgfQqmdqtjqGgm4WChdYIhO1F/CmH21vnkSUvPEgXNgDwkjg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="index.js" defer></script>
+</head>
+<body>
+    
+    <div class='title'>
+        <h3>Dr. Karen<strong> Fergus</strong></h3>
+    </div>
+      
+    <div class="scroller">
+        <ol>
+            <li style="--bg: url(https://plus.unsplash.com/premium_photo-1669759293824-b3d9af13bb73?q=80&w=3085&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)" data-url="week1.html">
+                <h2>Week 1</h2>
+                <p>This week focused on the exploration and validation of qualitative methods in psychology</p>
+            </li>
+            <li style="--bg: url(https://images.unsplash.com/photo-1592542453915-2fd2322f1751?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGRhcmslMjBuaWdodHxlbnwwfHwwfHx8MA%3D%3D)" data-url="Sub/Fundamentals C1/index.html">
+                <h2>Week 2</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ipsum necessitatibus eos minima animi asperiores perspiciatis voluptatibus dolor voluptatum nesciunt pariatur, nostrum, dicta porro at similique corporis vel magni doloremque?</p>
+            </li>
+            <li style="--bg: url(https://images.unsplash.com/photo-1513438205128-16af16280739?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8ZGFyayUyMG5pZ2h0fGVufDB8fDB8fHww)">
+                <h2>Week 3</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus adipisci, obcaecati eum veniam assumenda laboriosam cum tenetur officiis. Aliquam esse enim asperiores saepe debitis error unde cum vel laudantium repellendus. </p>
+            </li>
+            <li style="--bg: url(https://images.unsplash.com/photo-1515825838458-f2a94b20105a?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGRhcmslMjBuaWdodHxlbnwwfHwwfHx8MA%3D%3D)">
+                <h2>Week 4</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam voluptate ipsam, at reiciendis dignissimos, enim voluptates, fuga expedita illum labore aperiam minima quidem atque. Placeat consectetur possimus rem dolor porro.</p>
+            </li>
+            <li style="--bg: url(https://images.unsplash.com/photo-1515311320503-6e3d309537b4?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fGRhcmslMjBuaWdodHxlbnwwfHwwfHx8MA%3D%3D)">
+                <h2>Week 5</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum necessitatibus debitis ad possimus aliquam nisi ex eos! Velit autem consequatur eius asperiores corporis sapiente repellendus unde nobis voluptatem, quod nihil.</p>
+            </li>
+            <li style="--bg: url(https://images.unsplash.com/photo-1518352724948-729151797553?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fGRhcmslMjBuaWdodHxlbnwwfHwwfHx8MA%3D%3D)">
+                <h2>Week 6</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis fugit praesentium perspiciatis voluptatibus quibusdam quidem velit? Fugiat harum repellat provident minima quasi. Praesentium modi ea, nostrum fugit nisi vel maiores.</p>
+            </li>
+            <li style="--bg: url(https://images.unsplash.com/photo-1520824071669-892f70d8a23d?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzh8fGRhcmslMjBuaWdodHxlbnwwfHwwfHx8MA%3D%3D)">
+                <h2>Week 7</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim natus quos repudiandae? Vitae repellat totam earum ducimus. Harum perferendis, temporibus dicta quos, error nam assumenda deserunt natus non nostrum accusantium.</p>
+            </li>
+            <!-- Repeat the first 6 backgrounds in the rest of the <li> tags -->
+            <li style="--bg: url(https://images.unsplash.com/photo-1592542453915-2fd2322f1751?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGRhcmslMjBuaWdodHxlbnwwfHwwfHx8MA%3D%3D)">
+                <h2>Heading</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia alias maiores laudantium dolor veniam consequuntur dicta, cumque voluptatum magni doloribus impedit, quos, quo aperiam quaerat sunt expedita officia voluptatibus nulla!</p>
+            </li>
+            <li style="--bg: url(https://images.unsplash.com/photo-1513438205128-16af16280739?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8ZGFyayUyMG5pZ2h0fGVufDB8fDB8fHww)">
+                <h2>Heading</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus consectetur fuga ducimus excepturi ut iste asperiores saepe, quasi maxime, hic in repellendus impedit fugit laboriosam debitis eveniet? Neque, mollitia temporibus!</p>
+            </li>
+            <li style="--bg: url(https://images.unsplash.com/photo-1515825838458-f2a94b20105a?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGRhcmslMjBuaWdodHxlbnwwfHwwfHx8MA%3D%3D)">
+                <h2>Heading</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed rerum ratione saepe tempore commodi asperiores eligendi nemo labore dicta quibusdam, iusto nihil quisquam veniam corrupti. Magnam, ad odit! Tempora, explicabo?</p>
+            </li>
+            <li style="--bg: url(https://images.unsplash.com/photo-1515311320503-6e3d309537b4?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fGRhcmslMjBuaWdodHxlbnwwfHwwfHx8MA%3D%3D)">
+                <h2>Heading</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim asperiores ab incidunt earum nobis ex similique laboriosam, suscipit sunt eius, quisquam porro quod velit maxime nisi non perferendis animi id?</p>
+            </li>
+            <li style="--bg: url(https://images.unsplash.com/photo-1518352724948-729151797553?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fGRhcmslMjBuaWdodHxlbnwwfHwwfHx8MA%3D%3D)">
+                <h2>Heading</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem quidem esse placeat voluptates at ducimus odit blanditiis minima omnis, nesciunt eveniet hic ea fuga modi amet iure quos facere sapiente.</p>
+            </li>
+            <li style="--bg: url(https://images.unsplash.com/photo-1520824071669-892f70d8a23d?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzh8fGRhcmslMjBuaWdodHxlbnwwfHwwfHx8MA%3D%3D)">
+                <h2>Heading</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam voluptate ipsam, at reiciendis dignissimos, enim voluptates, fuga expedita illum labore aperiam minima quidem atque. Placeat consectetur possimus rem dolor porro.</p>
+            </li>
+            <li style="--bg: url(https://images.unsplash.com/photo-1592542453915-2fd2322f1751?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGRhcmslMjBuaWdodHxlbnwwfHwwfHx8MA%3D%3D)">
+                <h2>Heading</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim asperiores ab incidunt earum nobis ex similique laboriosam, suscipit sunt eius, quisquam porro quod velit maxime nisi non perferendis animi id?</p>
+            </li>
+            <li style="--bg: url(https://images.unsplash.com/photo-1513438205128-16af16280739?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8ZGFyayUyMG5pZ2h0fGVufDB8fDB8fHww)">
+                <h2>Heading</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem quidem esse placeat voluptates at ducimus odit blanditiis minima omnis, nesciunt eveniet hic ea fuga modi amet iure quos facere sapiente.</p>
+            </li>
+            <li style="--bg: url(https://images.unsplash.com/photo-1515825838458-f2a94b20105a?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGRhcmslMjBuaWdodHxlbnwwfHwwfHx8MA%3D%3D)">
+                <h2>Heading</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam voluptate ipsam, at reiciendis dignissimos, enim voluptates, fuga expedita illum labore aperiam minima quidem atque. Placeat consectetur possimus rem dolor porro.</p>
+            </li>
+            <li style="--bg: url(https://images.unsplash.com/photo-1515311320503-6e3d309537b4?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fGRhcmslMjBuaWdodHxlbnwwfHwwfHx8MA%3D%3D)">
+                <h2>Heading</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum necessitatibus debitis ad possimus aliquam nisi ex eos! Velit autem consequatur eius asperiores corporis sapiente repellendus unde nobis voluptatem, quod nihil.</p>
+            </li>
+            <li style="--bg: url(https://images.unsplash.com/photo-1518352724948-729151797553?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fGRhcmslMjBuaWdodHxlbnwwfHwwfHx8MA%3D%3D)">
+                <h2>Heading</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis fugit praesentium perspiciatis voluptatibus quibusdam quidem velit? Fugiat harum repellat provident minima quasi. Praesentium modi ea, nostrum fugit nisi vel maiores.</p>
+            </li>
+            <li style="--bg: url(https://images.unsplash.com/photo-1520824071669-892f70d8a23d?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzh8fGRhcmslMjBuaWdodHxlbnwwfHwwfHx8MA%3D%3D)">
+                <h2>Heading</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim natus quos repudiandae? Vitae repellat totam earum ducimus. Harum perferendis, temporibus dicta quos, error nam assumenda deserunt natus non nostrum accusantium.</p>
+            </li>
+            <!-- Repeat the first 6 backgrounds in the rest of the <li> tags -->
+            <li style="--bg: url(https://images.unsplash.com/photo-1592542453915-2fd2322f1751?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGRhcmslMjBuaWdodHxlbnwwfHwwfHx8MA%3D%3D)">
+                <h2>Heading</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia alias maiores laudantium dolor veniam consequuntur dicta, cumque voluptatum magni doloribus impedit, quos, quo aperiam quaerat sunt expedita officia voluptatibus nulla!</p>
+            </li>
+            <li style="--bg: url(https://images.unsplash.com/photo-1513438205128-16af16280739?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8ZGFyayUyMG5pZ2h0fGVufDB8fDB8fHww)">
+                <h2>Heading</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus consectetur fuga ducimus excepturi ut iste asperiores saepe, quasi maxime, hic in repellendus impedit fugit laboriosam debitis eveniet? Neque, mollitia temporibus!</p>
+            </li>
+            <li style="--bg: url(https://images.unsplash.com/photo-1515825838458-f2a94b20105a?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGRhcmslMjBuaWdodHxlbnwwfHwwfHx8MA%3D%3D)">
+                <h2>Heading</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed rerum ratione saepe tempore commodi asperiores eligendi nemo labore dicta quibusdam, iusto nihil quisquam veniam corrupti. Magnam, ad odit! Tempora, explicabo?</p>
+            </li>
+            <li style="--bg: url(https://images.unsplash.com/photo-1515311320503-6e3d309537b4?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fGRhcmslMjBuaWdodHxlbnwwfHwwfHx8MA%3D%3D)">
+                <h2>Heading</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim asperiores ab incidunt earum nobis ex similique laboriosam, suscipit sunt eius, quisquam porro quod velit maxime nisi non perferendis animi id?</p>
+            </li>
+            <li style="--bg: url(https://images.unsplash.com/photo-1518352724948-729151797553?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fGRhcmslMjBuaWdodHxlbnwwfHwwfHx8MA%3D%3D)">
+                <h2>Heading</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem quidem esse placeat voluptates at ducimus odit blanditiis minima omnis, nesciunt eveniet hic ea fuga modi amet iure quos facere sapiente.</p>
+            </li>
+            <li style="--bg: url(https://images.unsplash.com/photo-1520824071669-892f70d8a23d?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzh8fGRhcmslMjBuaWdodHxlbnwwfHwwfHx8MA%3D%3D)">
+                <h2>Heading</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam voluptate ipsam, at reiciendis dignissimos, enim voluptates, fuga expedita illum labore aperiam minima quidem atque. Placeat consectetur possimus rem dolor porro.</p>
+            </li>
+                        
+        </ol>
+    </div>
+</body>
+</html>
