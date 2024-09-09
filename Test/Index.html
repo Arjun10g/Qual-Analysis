@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="index.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<script>
+    MathJax.Hub.Config({
+        extensions: ["tex2jax.js"],
+        jax: ["input/TeX", "output/HTML-CSS"],
+        tex2jax: {
+            inlineMath: [['\\(', '\\)']],
+            displayMath: [['\\[', '\\]']],
+            processEscapes: true
+        },
+        "HTML-CSS": { scale: 90 },
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js" integrity="sha512-AMl4wfwAmDM1lsQvVBBRHYENn1FR8cfOTpt8QVbb/P55mYOdahHD4LmHM1W55pNe3j/3od8ELzPf/8eNkkjISQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Observer.min.js" integrity="sha512-7xTD1meeGGoAzwZKA0Z8YelV3qAvRltuwACWXpnxtneF7VAMztOTAi3t4laVSaE4Znq4LMPeGUIYWEvKEk5r3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Draggable.min.js" integrity="sha512-S6SXKUZ11xkCoD/UuhdXG4B4iiCXng+xW2KCx0lgfQqmdqtjqGgm4WChdYIhO1F/CmH21vnkSUvPEgXNgDwkjg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="index.js" defer></script>
+</head>
+<body>
+
+
+    <div class="header">
+        <!-- Rhonda Baker -->
+        <div class="name rhonda">
+            <div class="first-name">
+                <div><span>R</span></div>
+                <div><span>H</span></div>
+                <div><span>O</span></div>
+                <div><span>N</span></div>
+                <div><span>D</span></div>
+                <div><span>A</span></div>
+            </div>
+            <div class="last-name">
+                <div><span>B</span></div>
+                <div><span>A</span></div>
+                <div><span>K</span></div>
+                <div><span>E</span></div>
+                <div><span>R</span></div>
+            </div>
+        </div>
+    
+        <!-- Sarah Bjornson -->
+        <div class="name sarah">
+            <div class="first-name">
+                <div><span>S</span></div>
+                <div><span>A</span></div>
+                <div><span>R</span></div>
+                <div><span>A</span></div>
+                <div><span>H</span></div>
+            </div>
+            <div class="last-name">
+                <div><span>B</span></div>
+                <div><span>J</span></div>
+                <div><span>O</span></div>
+                <div><span>R</span></div>
+                <div><span>N</span></div>
+                <div><span>S</span></div>
+                <div><span>O</span></div>
+                <div><span>N</span></div>
+            </div>
+        </div>
+    
+        <!-- Gary Bold -->
+        <div class="name gary">
+            <div class="first-name">
+                <div><span>G</span></div>
+                <div><span>A</span></div>
+                <div><span>R</span></div>
+                <div><span>Y</span></div>
+            </div>
+            <div class="last-name">
+                <div><span>B</span></div>
+                <div><span>O</span></div>
+                <div><span>L</span></div>
+                <div><span>D</span></div>
+            </div>
+        </div>
+    
+        <!-- Victoria Celio -->
+        <div class="name victoria">
+            <div class="first-name">
+                <div><span>V</span></div>
+                <div><span>I</span></div>
+                <div><span>C</span></div>
+                <div><span>T</span></div>
+                <div><span>O</span></div>
+                <div><span>R</span></div>
+                <div><span>I</span></div>
+                <div><span>A</span></div>
+            </div>
+            <div class="last-name">
+                <div><span>C</span></div>
+                <div><span>E</span></div>
+                <div><span>L</span></div>
+                <div><span>I</span></div>
+                <div><span>O</span></div>
+            </div>
+        </div>
+    
+        <!-- Karen D Fergus -->
+        <div class="name karen">
+            <div class="first-name">
+                <div><span>K</span></div>
+                <div><span>A</span></div>
+                <div><span>R</span></div>
+                <div><span>E</span></div>
+                <div><span>N</span></div>
+            </div>
+            <div class="last-name">
+                <div><span>F</span></div>
+                <div><span>E</span></div>
+                <div><span>R</span></div>
+                <div><span>G</span></div>
+                <div><span>U</span></div>
+                <div><span>S</span></div>
+            </div>
+        </div>
+    
+        <!-- Arjunvir Ghumman -->
+        <div class="name arjun">
+            <div class="first-name">
+                <div><span>A</span></div>
+                <div><span>R</span></div>
+                <div><span>J</span></div>
+                <div><span>U</span></div>
+                <div><span>N</span></div>
+            </div>
+            <div class="last-name">
+                <div><span>G</span></div>
+                <div><span>H</span></div>
+                <div><span>U</span></div>
+                <div><span>M</span></div>
+                <div><span>M</span></div>
+                <div><span>A</span></div>
+                <div><span>N</span></div>
+            </div>
+        </div>
+    
+        <!-- Annabelle Moore -->
+        <div class="name annabelle">
+            <div class="first-name">
+                <div><span>A</span></div>
+                <div><span>N</span></div>
+                <div><span>N</span></div>
+                <div><span>A</span></div>
+                <div><span>B</span></div>
+                <div><span>E</span></div>
+                <div><span>L</span></div>
+                <div><span>L</span></div>
+                <div><span>E</span></div>
+            </div>
+            <div class="last-name">
+                <div><span>M</span></div>
+                <div><span>O</span></div>
+                <div><span>O</span></div>
+                <div><span>R</span></div>
+                <div><span>E</span></div>
+            </div>
+        </div>
+    
+        <!-- Samantha Motola -->
+        <div class="name samantha">
+            <div class="first-name">
+                <div><span>S</span></div>
+                <div><span>A</span></div>
+                <div><span>M</span></div>
+                <div><span>A</span></div>
+                <div><span>N</span></div>
+                <div><span>T</span></div>
+                <div><span>H</span></div>
+                <div><span>A</span></div>
+            </div>
+            <div class="last-name">
+                <div><span>M</span></div>
+                <div><span>O</span></div>
+                <div><span>T</span></div>
+                <div><span>O</span></div>
+                <div><span>L</span></div>
+                <div><span>A</span></div>
+            </div>
+        </div>
+    
+        <!-- Naomi Phung -->
+        <div class="name naomi">
+            <div class="first-name">
+                <div><span>N</span></div>
+                <div><span>A</span></div>
+                <div><span>O</span></div>
+                <div><span>M</span></div>
+                <div><span>I</span></div>
+            </div>
+            <div class="last-name">
+                <div><span>P</span></div>
+                <div><span>H</span></div>
+                <div><span>U</span></div>
+                <div><span>N</span></div>
+                <div><span>G</span></div>
+            </div>
+        </div>
+    
+        <!-- Talia Tissera -->
+        <div class="name talia">
+            <div class="first-name">
+                <div><span>T</span></div>
+                <div><span>A</span></div>
+                <div><span>L</span></div>
+                <div><span>I</span></div>
+                <div><span>A</span></div>
+            </div>
+            <div class="last-name">
+                <div><span>T</span></div>
+                <div><span>I</span></div>
+                <div><span>S</span></div>
+                <div><span>S</span></div>
+                <div><span>E</span></div>
+                <div><span>R</span></div>
+                <div><span>A</span></div>
+            </div>
+        </div>
+    
+        <!-- Cassandra Wyers -->
+        <div class="name cassandra">
+            <div class="first-name">
+                <div><span>C</span></div>
+                <div><span>A</span></div>
+                <div><span>S</span></div>
+                <div><span>S</span></div>
+                <div><span>A</span></div>
+                <div><span>N</span></div>
+                <div><span>D</span></div>
+                <div><span>R</span></div>
+                <div><span>A</span></div>
+            </div>
+            <div class="last-name">
+                <div><span>W</span></div>
+                <div><span>Y</span></div>
+                <div><span>E</span></div>
+                <div><span>R</span></div>
+                <div><span>S</span></div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

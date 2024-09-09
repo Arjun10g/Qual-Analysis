@@ -1,4 +1,47 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600');
+/* Header container */
+.header {
+  display: none; /* Ensure the header is a flex container */
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+  width: 100%;
+  background: transparent;
+  color: white;
+  flex-wrap: wrap;
+  padding: 20px 0;
+  box-shadow: 0px 4px 10px floralwhite;
+  position: fixed;
+  top: 0;
+}
+
+/* Name styles */
+.name {
+  display: flex;
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+  gap: 25px;
+  width: 89%; /* Take up the full width */
+}
+
+/* First and Last name */
+.first-name, .last-name {
+  display: flex;
+  justify-content: center; /* Center the text horizontally */
+  gap: 2px;
+}
+
+/* Span for individual letters */
+.name div span {
+  font-size: 2rem;
+  color: #ffffff;
+  text-shadow: 
+      2px 2px 5px rgba(0, 0, 0, 0.3),
+      0px 0px 10px rgba(255, 255, 255, 0.5),
+      0px 0px 20px rgba(173, 216, 230, 0.7),
+      0px 0px 30px rgba(173, 216, 230, 0.8);
+}
+
+
 
 .shoutout {
   color:#444444;
@@ -132,13 +175,13 @@ ol > li {
     overflow: hidden;
     position: relative;
     width: 20vw;
+    height: 40vh;
     padding: 10px;
     cursor: pointer;
+    background-size: cover;
 }
 
 ol > li::before {
-    counter-increment: list-item;
-    content: counter(list-item) ".";
     font-size: 5em;
     font-weight: bold;
     color: #fff;
@@ -180,6 +223,7 @@ h2 {
     font-weight: normal;
 }
 
+
 @keyframes intro {
     from {
         transform-origin: center left;
@@ -208,7 +252,26 @@ h2 {
 
 @media screen and (max-width: 1000px) {
     ol > li {
-        width: 80vw;
+      width: 80vw;
+      height: 30vh;
     }
-    
-}
+    .title h3 {
+      font-size: 24px;
+    }
+    .shoutout {
+      font-size: 12px;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    ol > li {
+      width: 90vw;
+      height: 25vh;
+    }
+    .title h3 {
+      font-size: 20px;
+    }
+    .shoutout {
+      font-size: 10px;
+    }
+  }
